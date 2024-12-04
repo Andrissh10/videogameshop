@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+.games-section, .cart-section {
+  margin-bottom: 2rem;
+}
+
+.game-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.game {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.game img {
+  width: 150px; /* Fixált szélesség */
+  height: 150px; /* Fixált magasság */
+  object-fit: cover; /* A kép illeszkedik a megadott mérethez, levágva a széleket */
+  border-radius: 5px; /* Esztétikus lekerekítés */
+  display: block; /* Kép középre igazításához szükséges */
+  margin: 0 auto 1rem auto; /* Kép alatti térköz és középre igazítás */
+}
+
+.game button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.game button:hover {
+  background-color: #218838;
+}
+
+.cart-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-section li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
